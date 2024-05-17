@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:TwitterAnal.UI.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="TwitterAnal.UI.MainPage"
+             x:DataType="models:MainPageViewModel"
+             Title="Registration">
+    <Grid RowDefinitions="8*,3*,*,3*,*,2*,2*,5*"
+          ColumnDefinitions="*,8*,*">
+        <Entry x:Name="EmailAddressField"
+               Placeholder="Email address"
+               PlaceholderColor="LightGray"
+               VerticalTextAlignment="Center"
+               TextColor="DarkBlue"
+               Grid.Row="1"
+               Grid.Column="1"
+               ClearButtonVisibility="WhileEditing"/>
+        <Entry x:Name="PasswordField"
+               Placeholder="Password"
+               PlaceholderColor="LightGray"
+               VerticalTextAlignment="Center"
+               TextColor="DarkBlue"
+               Grid.Row="3"
+               Grid.Column="1"
+               IsPassword="True"
+               ClearButtonVisibility="WhileEditing"/>
+        <Button Text="Log In"
+                BackgroundColor="DarkBlue"
+                TextColor="AliceBlue"
+                Grid.Row="5"
+                Grid.Column="1"
+                Command="{Binding RegistrateUserCommand}"/>
+        <Button Text="Already have an account"
+                BackgroundColor="White"
+                TextColor="DarkBlue"
+                Grid.Row="6"
+                Grid.Column="1"
+                Command="{Binding AlreadyHaveAnAccountCommand}"/>
+    </Grid>
+    
+
+</ContentPage>

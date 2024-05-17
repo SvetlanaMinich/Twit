@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TwitterAnal.UI.Pages.EditUserInfoPage"
+             xmlns:models="clr-namespace:TwitterAnal.UI.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="models:EditUserInfoPageViewModel"
+             xmlns:entities="clr-namespace:TwitterAnal.Domain.Entities;assembly=TwitterAnal.Domain"
+             Title="Edit profile">
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Appearing"
+                                        Command="{Binding GetUserCommand}"/>
+    </ContentPage.Behaviors>
+    <Grid RowDefinitions="4*,*,2*,*,*,2*,*,2*,4*"
+          ColumnDefinitions="*,8*,*">
+        <Label Text="Username"
+               FontSize="Micro"
+               FontAttributes="Bold"
+               Grid.Row="1"
+               Grid.Column="1"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+        <Entry Placeholder="{Binding UserName}"
+               PlaceholderColor="Gray"
+               Text="{Binding UserName, Mode=TwoWay}"
+               TextColor="Black"
+               Grid.Row="2"
+               Grid.Column="1"/>
+        <Label Text="Nickname"
+               FontSize="Micro"
+               FontAttributes="Bold"
+               Grid.Row="4"
+               Grid.Column="1"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+        <Entry Placeholder="{Binding NickName}"
+               PlaceholderColor="Gray"
+               TextColor="Black"
+               Text="{Binding NickName, Mode=TwoWay}"
+               Grid.Row="5"
+               Grid.Column="1"/>
+        <Button Text="Done"
+                TextColor="White"
+                BackgroundColor="DarkBlue"
+                Grid.Row="7"
+                Grid.Column="1"
+                Command="{Binding UpdateUserCommand}"/>
+    </Grid>
+</ContentPage>

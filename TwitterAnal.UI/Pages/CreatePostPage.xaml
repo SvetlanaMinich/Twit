@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TwitterAnal.UI.Pages.CreatePostPage"
+             xmlns:models="clr-namespace:TwitterAnal.UI.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="models:CreatePostPageViewModel"
+             xmlns:entities="clr-namespace:TwitterAnal.Domain.Entities;assembly=TwitterAnal.Domain"
+             Title="Create post">
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Appearing"
+                                    Command="{Binding getUsersInfoCommand}"/>
+    </ContentPage.Behaviors>
+    <Grid RowDefinitions="2*,2*,2*,*,6*,*,2*,*"
+          ColumnDefinitions="*,2*,4*,2*,*">
+        <Button Text="Cancel"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                BackgroundColor="White"
+                TextColor="DarkBlue"
+                Command="{Binding CancelCommand}"/>
+        <Label Text="New post"
+               Grid.Row="1"
+               Grid.Column="1"
+               Grid.ColumnSpan="3"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Large"
+               TextColor="Black"/>
+        <Label Text="{Binding User.NickName}"
+               Grid.Row="3"
+               Grid.Column="1"
+               Grid.ColumnSpan="3"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Medium"
+               TextColor="Black"/>
+        <Editor Grid.Row="4"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Placeholder="Type here..."
+                PlaceholderColor="Gray"
+                Text="{Binding Text, Mode=TwoWay}"
+                TextColor="Black"
+                FontSize="Micro"/>
+        <Button Text="Post"
+                Grid.Row="6"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                BackgroundColor="DarkBlue"
+                TextColor="White"
+                Command="{Binding CreatePostCommand}"/>
+    </Grid>
+</ContentPage>

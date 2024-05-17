@@ -1,0 +1,1 @@
+C:\sem4\oop\TwitterAnal\TwitterAnal.UI\TwitterAnal.UI.csproj;x64

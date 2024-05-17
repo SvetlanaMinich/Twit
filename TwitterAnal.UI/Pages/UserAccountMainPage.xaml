@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TwitterAnal.UI.Pages.UserAccountMainPage"
+             xmlns:models="clr-namespace:TwitterAnal.UI.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="models:UserAccountMainPageViewModel"
+             xmlns:entities="clr-namespace:TwitterAnal.Domain.Entities;assembly=TwitterAnal.Domain"
+             Title="Account">
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Loaded"
+                                        Command="{Binding getUserCommand}"/>
+    </ContentPage.Behaviors>
+    <Grid RowDefinitions="2*,*,2*,*,*,2*,*,*,6*,*"
+          ColumnDefinitions="*,2*,4*,2*,*">
+        <Button Text="Log Out"
+                Grid.Row="0"
+                Grid.Column="0"
+                BackgroundColor="White"
+                HorizontalOptions="Start"
+                TextColor="DarkBlue"
+                FontAttributes="Bold"
+                Command="{Binding LogOutCommand}"/>
+        <Label Text="{Binding UserName}"
+               Grid.Row="2"
+               Grid.Column="1"
+               Grid.ColumnSpan="2"
+               FontAttributes="Bold"
+               FontSize="Large"
+               TextColor="Black"/>
+        <Label Text="{Binding NickName}"
+               Grid.Row="3"
+               Grid.Column="1"
+               Grid.ColumnSpan="2"
+               TextColor="Black"
+               FontSize="Micro"/>
+        <Button Text="Edit profile"
+                Grid.Row="5"
+                Grid.Column="1"
+                BorderColor="Gray"
+                BorderWidth="2"
+                BackgroundColor="White"
+                TextColor="Black"
+                Command="{Binding EditProfileCommand}"/>
+        <Button Text="New post"
+                Grid.Row="5"
+                Grid.Column="3"
+                BorderColor="Gray"
+                BorderWidth="2"
+                BackgroundColor="White"
+                TextColor="Black"
+                Command="{Binding CreatePostCommand}"/>
+        <Label Text="Posts:"
+               Grid.Row="6"
+               Grid.Column="1"
+               Grid.ColumnSpan="3"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Micro"/>
+        <CollectionView ItemsSource="{Binding Posts}"
+                        Grid.Row="8"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="3">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="entities:Post">
+                    <Frame BorderColor="Black"
+                               CornerRadius="5"
+                               Padding="5"
+                               Margin="5">
+                        <Label Text="{Binding Text}"/>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

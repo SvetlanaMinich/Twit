@@ -1,0 +1,15 @@
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\bin\Debug\net8.0\TwitterAnal.Persistense.deps.json
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\bin\Debug\net8.0\TwitterAnal.Persistense.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\bin\Debug\net8.0\TwitterAnal.Persistense.pdb
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\bin\Debug\net8.0\TwitterAnal.Domain.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\bin\Debug\net8.0\TwitterAnal.Domain.pdb
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\TwitterAnal.Persistense.csproj.AssemblyReference.cache
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\TwitterAnal.Persistense.GeneratedMSBuildEditorConfig.editorconfig
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\TwitterAnal.Persistense.AssemblyInfoInputs.cache
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\TwitterAnal.Persistense.AssemblyInfo.cs
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\TwitterAnal.Persistense.csproj.CoreCompileInputs.cache
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\TwitterA.9105C7D0.Up2Date
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\TwitterAnal.Persistense.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\refint\TwitterAnal.Persistense.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\TwitterAnal.Persistense.pdb
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\ref\TwitterAnal.Persistense.dll

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "BPyGOdXB0MJg6f1JkaGx+pLXAocG3QRjg1iwfVO2VGHfXur1+vYKXW7giPQlva830aja1e6FDr1+klf9poeiqA==",
+  "success": true,
+  "projectFilePath": "C:\\sem4\\oop\\TwitterAnal\\TwitterAnal.Application\\TwitterAnal.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\imsve\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\imsve\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\imsve\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
