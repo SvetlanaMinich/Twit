@@ -11,8 +11,8 @@
         <toolkit:EventToCommandBehavior EventName="Appearing"
                                         Command="{Binding GetUserCommand}"/>
     </ContentPage.Behaviors>
-    <Grid RowDefinitions="4*,*,2*,*,*,2*,*,2*,4*"
-          ColumnDefinitions="*,8*,*">
+    <StackLayout Spacing="10"
+                 Margin="20">
         <Label Text="Username"
                FontSize="Micro"
                FontAttributes="Bold"
@@ -45,5 +45,5 @@
                 Grid.Row="7"
                 Grid.Column="1"
                 Command="{Binding UpdateUserCommand}"/>
-    </Grid>
+    </StackLayout>
 </ContentPage>

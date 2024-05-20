@@ -4,10 +4,94 @@
         <name>TwitterAnal.UI</name>
     </assembly>
     <members>
+        <member name="T:TwitterAnal.UI.ViewModels.AuthorizationUserPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.AuthorizationUserPageViewModel.IsModerator">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.AuthorizationUserPageViewModel.isModerator"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.AuthorizationUserPageViewModel.UserEmail">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.AuthorizationUserPageViewModel.userEmail"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.AuthorizationUserPageViewModel.UserPassword">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.AuthorizationUserPageViewModel.userPassword"/>
+        </member>
+        <member name="F:TwitterAnal.UI.ViewModels.AuthorizationUserPageViewModel.authorizateUserCommand">
+            <summary>The backing field for <see cref="P:TwitterAnal.UI.ViewModels.AuthorizationUserPageViewModel.AuthorizateUserCommand"/>.</summary>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.AuthorizationUserPageViewModel.AuthorizateUserCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.AuthorizationUserPageViewModel.AuthorizateUser"/>.</summary>
+        </member>
+        <member name="T:TwitterAnal.UI.ViewModels.CreatePostPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.User">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.user"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.UserName">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.userName"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.Creator">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.creator"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.Text">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.text"/>
+        </member>
+        <member name="F:TwitterAnal.UI.ViewModels.CreatePostPageViewModel._getUsersInfoCommand">
+            <summary>The backing field for <see cref="P:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.getUsersInfoCommand"/>.</summary>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.getUsersInfoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.getUsersInfo"/>.</summary>
+        </member>
+        <member name="F:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.createPostCommand">
+            <summary>The backing field for <see cref="P:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.CreatePostCommand"/>.</summary>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.CreatePostCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.CreatePost"/>.</summary>
+        </member>
+        <member name="F:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.cancelCommand">
+            <summary>The backing field for <see cref="P:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.CancelCommand"/>.</summary>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.CancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.CreatePostPageViewModel.Cancel"/>.</summary>
+        </member>
+        <member name="T:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.User">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.user"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.UserName">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.userName"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.NickName">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.nickName"/>
+        </member>
+        <member name="F:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.getUserCommand">
+            <summary>The backing field for <see cref="P:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.GetUserCommand"/>.</summary>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.GetUserCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.GetUser"/>.</summary>
+        </member>
+        <member name="F:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.updateUserCommand">
+            <summary>The backing field for <see cref="P:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.UpdateUserCommand"/>.</summary>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.UpdateUserCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.EditUserInfoPageViewModel.UpdateUser"/>.</summary>
+        </member>
         <member name="T:TwitterAnal.UI.ViewModels.MainPageViewModel">
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.MainPageViewModel.IsModerator">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.MainPageViewModel.isModerator"/>
         </member>
         <member name="P:TwitterAnal.UI.ViewModels.MainPageViewModel.UserEmail">
             <inheritdoc cref="F:TwitterAnal.UI.ViewModels.MainPageViewModel.userEmail"/>
@@ -26,6 +110,78 @@
         </member>
         <member name="P:TwitterAnal.UI.ViewModels.MainPageViewModel.AlreadyHaveAnAccountCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.MainPageViewModel.AlreadyHaveAnAccount"/>.</summary>
+        </member>
+        <member name="T:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.Moderator">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.moderator"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.NickName">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.nickName"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.Email">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.email"/>
+        </member>
+        <member name="F:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.getModeratorCommand">
+            <summary>The backing field for <see cref="P:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.GetModeratorCommand"/>.</summary>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.GetModeratorCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.GetModerator"/>.</summary>
+        </member>
+        <member name="F:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.logOutCommand">
+            <summary>The backing field for <see cref="P:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.LogOutCommand"/>.</summary>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.LogOutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.ModeratorAccountMainPageViewModel.LogOut"/>.</summary>
+        </member>
+        <member name="T:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.User">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.user"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.UserName">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.userName"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.NickName">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.nickName"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.Email">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.email"/>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.Bio">
+            <inheritdoc cref="F:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.bio"/>
+        </member>
+        <member name="F:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel._getUserCommand">
+            <summary>The backing field for <see cref="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.getUserCommand"/>.</summary>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.getUserCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.getUser"/>.</summary>
+        </member>
+        <member name="F:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.createPostCommand">
+            <summary>The backing field for <see cref="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.CreatePostCommand"/>.</summary>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.CreatePostCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.CreatePost"/>.</summary>
+        </member>
+        <member name="F:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.logOutCommand">
+            <summary>The backing field for <see cref="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.LogOutCommand"/>.</summary>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.LogOutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.LogOut"/>.</summary>
+        </member>
+        <member name="F:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.editProfileCommand">
+            <summary>The backing field for <see cref="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.EditProfileCommand"/>.</summary>
+        </member>
+        <member name="P:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.EditProfileCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TwitterAnal.UI.ViewModels.UserAccountMainPageViewModel.EditProfile"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
@@ -153,11 +309,38 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsModerator">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsModerator" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UserEmail">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UserEmail" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UserPassword">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UserPassword" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.User">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "User" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UserName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UserName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Creator">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Creator" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Text">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Text" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NickName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NickName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Moderator">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Moderator" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Email">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Email" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Bio">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Bio" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -165,11 +348,38 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsModerator">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsModerator" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UserEmail">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UserEmail" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UserPassword">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UserPassword" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.User">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "User" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UserName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UserName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Creator">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Creator" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Text">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Text" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NickName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NickName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Moderator">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Moderator" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Email">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Email" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Bio">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Bio" generated properties.</summary>
         </member>
     </members>
 </doc>

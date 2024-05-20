@@ -18,7 +18,9 @@ namespace TwitterAnal.Persistense.Data
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=TwitterAnalogue.db");
+            /*string databasePath = "TwitterAnalogue.db";
+            string databaseFullPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), databasePath);
+            optionsBuilder.UseSqlite($"Data Source={databaseFullPath}");*/
         }
     }
 }

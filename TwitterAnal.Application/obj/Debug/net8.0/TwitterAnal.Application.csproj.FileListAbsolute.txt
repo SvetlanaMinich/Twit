@@ -13,3 +13,4 @@ C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Debug\net8.0\TwitterAnal.App
 C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Debug\net8.0\refint\TwitterAnal.Application.dll
 C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Debug\net8.0\TwitterAnal.Application.pdb
 C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Debug\net8.0\ref\TwitterAnal.Application.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Debug\net8.0\TwitterAnal.Application.sourcelink.json

@@ -13,3 +13,4 @@ C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\TwitterAnal.Per
 C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\refint\TwitterAnal.Persistense.dll
 C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\TwitterAnal.Persistense.pdb
 C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\ref\TwitterAnal.Persistense.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Persistense\obj\Debug\net8.0\TwitterAnal.Persistense.sourcelink.json

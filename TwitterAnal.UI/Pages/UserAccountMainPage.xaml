@@ -11,53 +11,55 @@
         <toolkit:EventToCommandBehavior EventName="Loaded"
                                         Command="{Binding getUserCommand}"/>
     </ContentPage.Behaviors>
-    <Grid RowDefinitions="2*,*,2*,*,*,2*,*,*,6*,*"
-          ColumnDefinitions="*,2*,4*,2*,*">
-        <Button Text="Log Out"
-                Grid.Row="0"
-                Grid.Column="0"
-                BackgroundColor="White"
-                HorizontalOptions="Start"
-                TextColor="DarkBlue"
-                FontAttributes="Bold"
-                Command="{Binding LogOutCommand}"/>
-        <Label Text="{Binding UserName}"
-               Grid.Row="2"
-               Grid.Column="1"
-               Grid.ColumnSpan="2"
-               FontAttributes="Bold"
-               FontSize="Large"
-               TextColor="Black"/>
-        <Label Text="{Binding NickName}"
-               Grid.Row="3"
-               Grid.Column="1"
-               Grid.ColumnSpan="2"
-               TextColor="Black"
-               FontSize="Micro"/>
-        <Button Text="Edit profile"
-                Grid.Row="5"
-                Grid.Column="1"
-                BorderColor="Gray"
-                BorderWidth="2"
-                BackgroundColor="White"
-                TextColor="Black"
-                Command="{Binding EditProfileCommand}"/>
-        <Button Text="New post"
-                Grid.Row="5"
-                Grid.Column="3"
-                BorderColor="Gray"
-                BorderWidth="2"
-                BackgroundColor="White"
-                TextColor="Black"
-                Command="{Binding CreatePostCommand}"/>
+    <StackLayout Spacing="10" Margin="20">
+        <StackLayout Spacing="40">
+            <Button Text="Log Out"
+                    BackgroundColor="White"
+                    TextColor="DarkBlue"
+                    BorderColor="DarkBlue"
+                    BorderWidth="1"
+                    FontAttributes="Bold"
+                    Command="{Binding LogOutCommand}"
+                    HorizontalOptions="Start"
+                    HeightRequest="40"/>
+            <Label Text="{Binding UserName}"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="Black"/>
+        </StackLayout>
+        <StackLayout Spacing="40">
+            <Label Text="{Binding NickName}"
+                   TextColor="Black"
+                   FontSize="Small"/>
+            <Grid ColumnDefinitions="8*,*,8*">
+                <Button Text="Edit profile"
+                        BorderColor="Gray"
+                        BorderWidth="2"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        Command="{Binding EditProfileCommand}"
+                        Grid.Column="0"
+                        HeightRequest="40"
+                        FontAttributes="Bold"/>
+                <Button Text="New post"
+                        BorderColor="Gray"
+                        BorderWidth="2"
+                        BackgroundColor="White"
+                        TextColor="Black"
+                        Command="{Binding CreatePostCommand}"
+                        Grid.Column="2"
+                        HeightRequest="40"
+                        FontAttributes="Bold"/>
+            </Grid>
+        </StackLayout>
+        <BoxView Color="LightGray"
+                 HeightRequest="1"
+                 HorizontalOptions="FillAndExpand"/>
         <Label Text="Posts:"
-               Grid.Row="6"
-               Grid.Column="1"
-               Grid.ColumnSpan="3"
                HorizontalOptions="Start"
                VerticalOptions="Center"
                FontAttributes="Bold"
-               FontSize="Micro"/>
+               FontSize="Medium"/>
         <CollectionView ItemsSource="{Binding Posts}"
                         Grid.Row="8"
                         Grid.Column="1"
@@ -68,10 +70,20 @@
                                CornerRadius="5"
                                Padding="5"
                                Margin="5">
-                        <Label Text="{Binding Text}"/>
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Label Text="{Binding Creator}"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"/>
+                                <Label Text="{Binding CreatedAt}"
+                                       FontSize="Medium"/>
+                            </StackLayout>
+                            <Label Text="{Binding Text}"
+                                   FontSize="Large"/>
+                        </StackLayout>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-    </Grid>
+    </StackLayout>
 </ContentPage>

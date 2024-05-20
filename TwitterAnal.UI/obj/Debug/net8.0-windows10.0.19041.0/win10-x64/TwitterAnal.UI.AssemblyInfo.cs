@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TwitterAnal.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+aad98d33ae5529b4658aa9897db564b9f627ebf0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TwitterAnal.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TwitterAnal.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

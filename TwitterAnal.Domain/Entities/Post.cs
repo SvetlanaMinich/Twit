@@ -3,19 +3,23 @@
     public class Post : Entity
     {
         public Post() { }
-        public Post(int creator, int user, string? createdAt, string? text)
+        public Post(string creator, int creatorid, string user, int userid, string? createdAt, string? text)
         {
             postsCount++;
             this.Id = postsCount;
-            CreatorId = creator;
-            UserId = user;
+            Creator = creator;
+            CreatorId = creatorid;
+            User = user;
+            UserId = userid;
             CreatedAt = createdAt;
             Text = text;
             LikeCount = 0;
         }
 
         public static int postsCount = 0;
-        public int CreatorId { get; private set; }
+        public string? Creator { get; set; }
+        public int CreatorId { get; set; }
+        public string? User { get; set; }
         public int UserId { get; set; }
         public string? CreatedAt { get; private set; }
         public string? Text { get; set; }

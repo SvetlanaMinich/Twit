@@ -114,4 +114,6 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionTwitterAnalUIHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+
 </Project>

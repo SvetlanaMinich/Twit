@@ -3,10 +3,6 @@
     public class Comment : Entity
     {
         public Comment() { }
-        public Comment(int id) 
-        { 
-            this.Id = id;
-        }
         public Comment(int id, Post? postBy, User? creator, DateTime createdAt, string? text, int likeCount)
         {
             this.Id = id;

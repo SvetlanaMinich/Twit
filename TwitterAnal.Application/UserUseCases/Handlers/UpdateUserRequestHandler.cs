@@ -9,14 +9,15 @@ namespace TwitterAnal.Application.UserUseCases.Handlers
         public async Task<User> Handle(UpdateUserRequest request, 
             CancellationToken cancellationToken)
         {
+            User user = request.user;
             await unitOfWork.Users.DeleteAsync(request.user, cancellationToken);
-            User newUser = new User(request.user.UserName,
-                request.user.NickName,
-                request.user.Email,
-                request.user.Bio,
-                request.user.HashPassword);
-            await unitOfWork.Users.AddAsync(newUser,cancellationToken);
-            return newUser;
+            user.UserName = request.user.UserName;
+            user.Email = request.user.Email;
+            user.NickName = request.user.NickName;
+            user.Bio = request.user.Bio;
+            user.HashPassword = request.user.HashPassword;
+            await unitOfWork.Users.AddAsync(user,cancellationToken);
+            return user;
         }
     }
 }

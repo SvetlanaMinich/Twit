@@ -12,16 +12,16 @@ namespace TwitterAnal.UI.ViewModels
         [ObservableProperty]
         User user;
         [ObservableProperty]
-        int userId;
+        string? userName;
         [ObservableProperty]
-        int creatorId;
+        string? creator;
         [ObservableProperty]
         string? text;
         [RelayCommand]
         async void getUsersInfo()
         {
-            UserId = User.Id;
-            CreatorId = User.Id;
+            UserName = User.NickName;
+            Creator = User.NickName;
             Text = String.Empty;
         }
         [RelayCommand]
@@ -29,7 +29,7 @@ namespace TwitterAnal.UI.ViewModels
         {
             if(Text != String.Empty)
             {
-                Post newPost = new Post(User.Id, User.Id, DateTime.Now.ToString(), Text);
+                Post newPost = new Post(User.NickName, User.Id, User.NickName, User.Id, DateTime.Now.ToString(), Text);
                 await _mediator.Send(new AddPostRequest(newPost));
 
             }

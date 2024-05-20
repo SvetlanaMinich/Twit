@@ -22,10 +22,11 @@ namespace TwitterAnal.UI
             builder.Configuration.AddJsonStream(stream);
 
             var connStr = builder.Configuration.GetConnectionString("SqliteConnection");
-            string dataDirectory = FileSystem.Current.AppDataDirectory + "/";
-            connStr = String.Format(connStr, dataDirectory);
+            string dataDirectory = FileSystem.Current.AppDataDirectory;
+            string databasePath = Path.Combine(dataDirectory, connStr);
+
             var options = new DbContextOptionsBuilder<AppDbContext>()
-                                                             .UseSqlite(connStr)
+                                                             .UseSqlite($"Data Source={databasePath}")
                                                              .Options;
 
             builder

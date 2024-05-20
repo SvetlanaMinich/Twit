@@ -11,47 +11,45 @@
         <toolkit:EventToCommandBehavior EventName="Appearing"
                                     Command="{Binding getUsersInfoCommand}"/>
     </ContentPage.Behaviors>
-    <Grid RowDefinitions="2*,2*,2*,*,6*,*,2*,*"
-          ColumnDefinitions="*,2*,4*,2*,*">
-        <Button Text="Cancel"
-                Grid.Row="0"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                BackgroundColor="White"
-                TextColor="DarkBlue"
-                Command="{Binding CancelCommand}"/>
-        <Label Text="New post"
-               Grid.Row="1"
-               Grid.Column="1"
-               Grid.ColumnSpan="3"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               FontAttributes="Bold"
-               FontSize="Large"
-               TextColor="Black"/>
-        <Label Text="{Binding User.NickName}"
-               Grid.Row="3"
-               Grid.Column="1"
-               Grid.ColumnSpan="3"
-               HorizontalOptions="Start"
-               VerticalOptions="Center"
-               FontAttributes="Bold"
-               FontSize="Medium"
-               TextColor="Black"/>
-        <Editor Grid.Row="4"
-                Grid.Column="1"
-                Grid.ColumnSpan="3"
-                Placeholder="Type here..."
-                PlaceholderColor="Gray"
-                Text="{Binding Text, Mode=TwoWay}"
-                TextColor="Black"
-                FontSize="Micro"/>
+    <StackLayout Spacing="10"
+                 Margin="20">
+        <StackLayout Spacing="100">
+            <Button Text="Cancel"
+                    BackgroundColor="White"
+                    TextColor="DarkBlue"
+                    Command="{Binding CancelCommand}"
+                    HorizontalOptions="Start"/>
+            <Label Text="New post:"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="Black"/>
+        </StackLayout>
+        <StackLayout Spacing="30">
+            <BoxView Color="LightGray"
+                     HeightRequest="1"
+                     HorizontalOptions="FillAndExpand"/>
+            <Label Text="{Binding User.NickName}"
+                  HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="Medium"
+                   TextColor="Black"/>
+        </StackLayout>
+        <Frame BorderColor="LightGray">
+            <Editor Placeholder="Type here..."
+                    PlaceholderColor="Gray"
+                    Text="{Binding Text, Mode=TwoWay}"
+                    TextColor="Black"
+                    FontSize="Medium"
+                    HeightRequest="300"/>
+        </Frame>
         <Button Text="Post"
-                Grid.Row="6"
-                Grid.Column="2"
-                Grid.ColumnSpan="2"
                 BackgroundColor="DarkBlue"
                 TextColor="White"
+                FontAttributes="Bold"
+                FontSize="Medium"
                 Command="{Binding CreatePostCommand}"/>
-    </Grid>
+    </StackLayout>
 </ContentPage>

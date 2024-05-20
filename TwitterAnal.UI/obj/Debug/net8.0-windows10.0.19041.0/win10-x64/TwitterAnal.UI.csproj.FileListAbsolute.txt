@@ -239,3 +239,4 @@ C:\sem4\oop\TwitterAnal\TwitterAnal.UI\bin\Debug\net8.0-windows10.0.19041.0\win1
 C:\sem4\oop\TwitterAnal\TwitterAnal.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\sem4\oop\TwitterAnal\TwitterAnal.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileProviders.Physical.dll
 C:\sem4\oop\TwitterAnal\TwitterAnal.UI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.UI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\TwitterAnal.UI.sourcelink.json
