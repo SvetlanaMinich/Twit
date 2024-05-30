@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TwitterAnal.UI.Pages.SearchPage"
+             xmlns:models="clr-namespace:TwitterAnal.UI.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="models:SearchUsersPageViewModel"
+             xmlns:entities="clr-namespace:TwitterAnal.Domain.Entities;assembly=TwitterAnal.Domain"
+             Title="Search users">
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Loaded"
+                                        Command="{Binding GetUsersCommand}"/>
+    </ContentPage.Behaviors>
+    <StackLayout Spacing="10" Margin="20">
+        <Frame BorderColor="Black"
+               CornerRadius="10"
+               HeightRequest="70"
+               Padding="5">
+            <SearchBar Placeholder="Search..."
+                       Text="{Binding Searchstr}"
+                       SearchCommand="{Binding SearchUserByNickNameCommand}"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"
+                       TextChanged="SearchBar_TextChanged"/>
+        </Frame>
+        <CollectionView ItemsSource="{Binding Users}"
+                        HeightRequest="600"
+                        x:Name="SearchedList">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="entities:User">
+                    <Frame BorderColor="White">
+                        <StackLayout>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding
+                                                             Source={RelativeSource
+                                                             AncestorType={x:Type models:SearchUsersPageViewModel} },
+                                                             Path=GoToSearchedUserCommand}"
+                                                             CommandParameter="{Binding}"/>
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="{Binding NickName}"
+                                   FontSize="Large"
+                                   FontAttributes="Bold"/>
+                            <Label Text="{Binding Bio}"
+                                   TextColor="Gray"
+                                   FontSize="Small"
+                                   MaxLines="1"/>
+                            <StackLayout Spacing="20">
+                                <StackLayout Orientation="Horizontal" Spacing="5">
+                                    <Label Text="{Binding SubscribersCount}"
+                                       TextColor="Black"
+                                       FontSize="Small"/>
+                                    <Label Text="followers"
+                                       TextColor="Black"
+                                       FontSize="Small"/>
+                                </StackLayout>
+                                <BoxView Color="Gray"
+                                     HeightRequest="0.5"
+                                     HorizontalOptions="FillAndExpand"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <BoxView Color="LightGray"
+                 HeightRequest="1"
+                 HorizontalOptions="FillAndExpand"/>
+        <Grid ColumnDefinitions="3*,*,3*,*,3*"
+              VerticalOptions="End">
+            <Button Text="Main"
+                    BackgroundColor="White"
+                    TextColor="DarkBlue"
+                    Command="{Binding}"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Grid.Column="0"/>
+            <Button Text="Acc"
+                    BackgroundColor="White"
+                    TextColor="DarkBlue"
+                    Command="{Binding GoToAccountPageCommand}"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Grid.Column="2"/>
+            <Button Text="Search"
+                    BackgroundColor="White"
+                    TextColor="DarkBlue"
+                    Command="{Binding}"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Grid.Column="4"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

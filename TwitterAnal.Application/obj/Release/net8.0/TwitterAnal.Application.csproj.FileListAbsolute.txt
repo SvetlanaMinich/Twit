@@ -1,0 +1,16 @@
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\bin\Release\net8.0\TwitterAnal.Application.deps.json
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\bin\Release\net8.0\TwitterAnal.Application.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\bin\Release\net8.0\TwitterAnal.Application.pdb
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\bin\Release\net8.0\TwitterAnal.Domain.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\bin\Release\net8.0\TwitterAnal.Domain.pdb
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Release\net8.0\TwitterAnal.Application.csproj.AssemblyReference.cache
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Release\net8.0\TwitterAnal.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Release\net8.0\TwitterAnal.Application.AssemblyInfoInputs.cache
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Release\net8.0\TwitterAnal.Application.AssemblyInfo.cs
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Release\net8.0\TwitterAnal.Application.csproj.CoreCompileInputs.cache
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Release\net8.0\TwitterAnal.Application.sourcelink.json
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Release\net8.0\TwitterA.61FD941E.Up2Date
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Release\net8.0\TwitterAnal.Application.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Release\net8.0\refint\TwitterAnal.Application.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Release\net8.0\TwitterAnal.Application.pdb
+C:\sem4\oop\TwitterAnal\TwitterAnal.Application\obj\Release\net8.0\ref\TwitterAnal.Application.dll

@@ -30,17 +30,35 @@ build_metadata.AdditionalFiles.ManifestResourceName = TwitterAnal.UI.MainPage.xa
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
+[C:/sem4/oop/TwitterAnal/TwitterAnal.UI/Pages/AddCommentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TwitterAnal.UI.Pages.AddCommentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AddCommentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AddCommentPage.xaml
+
 [C:/sem4/oop/TwitterAnal/TwitterAnal.UI/Pages/AuthorizationUserPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TwitterAnal.UI.Pages.AuthorizationUserPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\AuthorizationUserPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\AuthorizationUserPage.xaml
 
+[C:/sem4/oop/TwitterAnal/TwitterAnal.UI/Pages/CommentsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TwitterAnal.UI.Pages.CommentsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CommentsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CommentsPage.xaml
+
 [C:/sem4/oop/TwitterAnal/TwitterAnal.UI/Pages/CreatePostPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TwitterAnal.UI.Pages.CreatePostPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\CreatePostPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\CreatePostPage.xaml
+
+[C:/sem4/oop/TwitterAnal/TwitterAnal.UI/Pages/DeletePostPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TwitterAnal.UI.Pages.DeletePostPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\DeletePostPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\DeletePostPage.xaml
 
 [C:/sem4/oop/TwitterAnal/TwitterAnal.UI/Pages/EditUserInfoPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -54,11 +72,29 @@ build_metadata.AdditionalFiles.ManifestResourceName = TwitterAnal.UI.Pages.Moder
 build_metadata.AdditionalFiles.TargetPath = Pages\ModeratorAccountMainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\ModeratorAccountMainPage.xaml
 
+[C:/sem4/oop/TwitterAnal/TwitterAnal.UI/Pages/OtherUsersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TwitterAnal.UI.Pages.OtherUsersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\OtherUsersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\OtherUsersPage.xaml
+
 [C:/sem4/oop/TwitterAnal/TwitterAnal.UI/Pages/RegistrationPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TwitterAnal.UI.Pages.RegistrationPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\RegistrationPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\RegistrationPage.xaml
+
+[C:/sem4/oop/TwitterAnal/TwitterAnal.UI/Pages/SearchPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TwitterAnal.UI.Pages.SearchPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SearchPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SearchPage.xaml
+
+[C:/sem4/oop/TwitterAnal/TwitterAnal.UI/Pages/UpdatePostPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TwitterAnal.UI.Pages.UpdatePostPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\UpdatePostPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\UpdatePostPage.xaml
 
 [C:/sem4/oop/TwitterAnal/TwitterAnal.UI/Pages/UserAccountMainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

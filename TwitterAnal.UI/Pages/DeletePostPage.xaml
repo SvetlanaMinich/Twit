@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TwitterAnal.UI.Pages.DeletePostPage"
+             xmlns:models="clr-namespace:TwitterAnal.UI.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="models:DeletePostPageViewModel"
+             xmlns:entities="clr-namespace:TwitterAnal.Domain.Entities;assembly=TwitterAnal.Domain"
+             Title="Delete post">
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Appearing"
+                                        Command="{Binding GetPostCommand}"/>
+    </ContentPage.Behaviors>
+    <StackLayout Spacing="10"
+                 Margin="20">
+        <StackLayout Spacing="100">
+            <Button Text="Cancel"
+                    BackgroundColor="White"
+                    TextColor="DarkBlue"
+                    Command="{Binding CancelCommand}"
+                    BorderColor="DarkBlue"
+                    BorderWidth="1"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    HeightRequest="40"/>
+            <Label Text="Post:"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="Black"/>
+        </StackLayout>
+        <StackLayout Spacing="30">
+            <BoxView Color="LightGray"
+                 HeightRequest="1"
+                 HorizontalOptions="FillAndExpand"/>
+            <Frame BorderColor="White"
+                   CornerRadius="5"
+                   Padding="5"
+                   Margin="5">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="{Binding NickName}"
+                               FontSize="Small"
+                               FontAttributes="Bold"
+                               TextColor="Black"/>
+                        <Label Text="{Binding CreatedAt}"
+                               FontSize="Small"
+                               TextColor="Gray"/>
+                    </StackLayout>
+                    <Label Text="{Binding Text}"
+                           FontSize="Small"
+                           TextColor="Black"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        <Button Text="Delete"
+            BackgroundColor="DarkBlue"
+            TextColor="White"
+            FontAttributes="Bold"
+            FontSize="Medium"
+            Command="{Binding DeletePostCommand}"/>
+    </StackLayout>
+</ContentPage>

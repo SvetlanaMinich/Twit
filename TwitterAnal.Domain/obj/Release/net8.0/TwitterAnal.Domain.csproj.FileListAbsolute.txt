@@ -1,0 +1,13 @@
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\bin\Release\net8.0\TwitterAnal.Domain.deps.json
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\bin\Release\net8.0\TwitterAnal.Domain.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\bin\Release\net8.0\TwitterAnal.Domain.pdb
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\obj\Release\net8.0\TwitterAnal.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\obj\Release\net8.0\TwitterAnal.Domain.AssemblyInfoInputs.cache
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\obj\Release\net8.0\TwitterAnal.Domain.AssemblyInfo.cs
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\obj\Release\net8.0\TwitterAnal.Domain.csproj.CoreCompileInputs.cache
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\obj\Release\net8.0\TwitterAnal.Domain.sourcelink.json
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\obj\Release\net8.0\TwitterAnal.Domain.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\obj\Release\net8.0\refint\TwitterAnal.Domain.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\obj\Release\net8.0\TwitterAnal.Domain.pdb
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\obj\Release\net8.0\ref\TwitterAnal.Domain.dll
+C:\sem4\oop\TwitterAnal\TwitterAnal.Domain\obj\Release\net8.0\TwitterAnal.Domain.csproj.AssemblyReference.cache

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TwitterAnal.UI.Pages.OtherUsersPage"
+             xmlns:models="clr-namespace:TwitterAnal.UI.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:DataType="models:OtherUsersPageViewModel"
+             xmlns:entities="clr-namespace:TwitterAnal.Domain.Entities;assembly=TwitterAnal.Domain"
+             Title="{Binding NickName}">
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Loaded"
+                                        Command="{Binding GetUserCommand}"/>
+    </ContentPage.Behaviors>
+    <StackLayout Spacing="10" Margin="20">
+        <StackLayout Spacing="40">
+            <Button Text="Back"
+                    BackgroundColor="White"
+                    TextColor="DarkBlue"
+                    BorderColor="DarkBlue"
+                    BorderWidth="1"
+                    FontAttributes="Bold"
+                    Command="{Binding GoToSearchPageCommand}"
+                    HorizontalOptions="Start"
+                    HeightRequest="40"/>
+            <HorizontalStackLayout Spacing="20">
+                <Image Source="{Binding ProfileImage}"
+                       WidthRequest="80"
+                       HeightRequest="80"/>
+                <StackLayout>
+                    <Label Text="{Binding UserName}"
+                       FontAttributes="Bold"
+                       FontSize="Large"
+                       TextColor="Black"/>
+                    <Label Text="{Binding NickName}"
+                       TextColor="Black"
+                       FontSize="Small"/>
+                    <Label Text="{Binding Bio}"
+                           TextColor="Black"
+                           FontSize="Small"/>
+                    <StackLayout Orientation="Horizontal" Spacing="5">
+                        <Label Text="{Binding SubscribersCount}"
+                               TextColor="Gray"
+                               FontSize="Small"/>
+                        <Label Text="followers"
+                               TextColor="Gray"
+                               FontSize="Small"/>
+                    </StackLayout>
+                </StackLayout>
+            </HorizontalStackLayout>
+        </StackLayout>
+        <Button Text="{Binding IsEnableToSubscribe}"
+                BorderColor="Gray"
+                BorderWidth="2"
+                BackgroundColor="White"
+                TextColor="Black"
+                Command="{Binding MakeSybscriptionCommand}"
+                HeightRequest="40"
+                FontAttributes="Bold"/>
+        <BoxView Color="LightGray"
+                 HeightRequest="1"
+                 HorizontalOptions="FillAndExpand"/>
+        <Label Text="Posts:"
+               HorizontalOptions="Start"
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Medium"/>
+        <CollectionView ItemsSource="{Binding Posts}"
+                        HeightRequest="400">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="entities:Post">
+                    <StackLayout Spacing="5">
+                        <Frame BorderColor="Black"
+                               CornerRadius="5"
+                               Padding="5"
+                               Margin="5">
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Label Text="{Binding Creator}"
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"/>
+                                    <Label Text="{Binding CreatedAt}"
+                                       FontSize="Medium"/>
+                                </StackLayout>
+                                <Label Text="{Binding Text}"
+                                   FontSize="Large"/>
+                            </StackLayout>
+                        </Frame>
+                        <StackLayout Orientation="Horizontal" Spacing="5">
+                            <Button Text="{Binding LikeCount}"
+                                    BackgroundColor="White"
+                                    TextColor="Black"
+                                    BorderColor="Gray"
+                                    BorderWidth="0.5"
+                                    FontAttributes="Bold"
+                                    FontSize="Micro"
+                                    HeightRequest="35">
+                                <Button.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding
+                                         Source={RelativeSource
+                                         AncestorType={x:Type models:OtherUsersPageViewModel} },
+                                         Path=LikePostCommand}"
+                                         CommandParameter="{Binding}"/>
+                                </Button.GestureRecognizers>
+                            </Button>
+                            <Label Text="likes"
+                                   TextColor="Black"
+                                   FontSize="Medium"
+                                   VerticalOptions="End"/>
+                            <Button Text="Comments"
+                                    TextColor="DarkBlue"
+                                    FontSize="Medium"
+                                    VerticalOptions="End"
+                                    FontAttributes="Bold"
+                                    HeightRequest="35">
+                                <Button.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding
+                                                          Source={RelativeSource
+                                                          AncestorType={x:Type models:OtherUsersPageViewModel} },
+                                                          Path=GoToCommentsCommand}"
+                                                          CommandParameter="{Binding}"/>
+                                </Button.GestureRecognizers>
+                            </Button>
+                        </StackLayout>
+                        <BoxView Color="LightGray"
+                                 HeightRequest="1"
+                                 HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <BoxView Color="LightGray"
+                 HeightRequest="1"
+                 HorizontalOptions="FillAndExpand"/>
+        <Grid ColumnDefinitions="3*,*,3*,*,3*"
+              VerticalOptions="End">
+            <Button Text="Main"
+                    BackgroundColor="White"
+                    TextColor="DarkBlue"
+                    Command="{Binding}"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Grid.Column="0"/>
+            <Button Text="Acc"
+                    BackgroundColor="White"
+                    TextColor="DarkBlue"
+                    Command="{Binding GoToAccountPageCommand}"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Grid.Column="2"/>
+            <Button Text="Search"
+                    BackgroundColor="White"
+                    TextColor="DarkBlue"
+                    Command="{Binding GoToSearchPageCommand}"
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Grid.Column="4"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
